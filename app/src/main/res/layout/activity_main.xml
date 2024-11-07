@@ -1,0 +1,767 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/blue"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo1"/>
+
+            <EditText
+                android:id="@+id/searchInput"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="-45dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/search_background"
+                android:drawableEnd="@drawable/ic_search"
+                android:hint="Search"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/searchResult"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="-28dp"
+                android:layout_marginEnd="1dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="L I G H T  N O V E L"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most Popular"
+            android:textColor="@color/white"
+            android:layout_marginTop="-33dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/cover1"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/renegade_immortal" />
+
+                    <TextView
+                        android:id="@+id/TextCover1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Renegede Immortal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/cover2"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/alchemy_emperor_divine_dao" />
+
+                    <TextView
+                        android:id="@+id/TextCover2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="Alchemy Emperor Of The Divine"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/cover3"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/martial_peak_"/>
+
+                    <TextView
+                        android:id="@+id/TextCover3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Martial Peak"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/cover4"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nine_star_hegemon_body_art" />
+
+                    <TextView
+                        android:id="@+id/TextCover4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Nine Star Hegemon Body Art"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/cover5"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/overgeared" />
+
+                    <TextView
+                        android:id="@+id/TextCover5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Overgeared"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+            </GridLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manhwa"
+            android:textColor="@color/white"
+            android:layout_marginTop="-33dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover6"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/solo_farming_in_the_tower"/>
+
+                <TextView
+                    android:id="@+id/TextCover6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Solo Farming In The Tower"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover7"
+                    android:layout_width="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pick_me_up"/>
+
+                <TextView
+                    android:id="@+id/TextCover7"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Pick Me Up !"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover8"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/the_imperial_hunter"/>
+
+                <TextView
+                    android:id="@+id/TextCover8"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="The Imperial Hunter"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover9"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/the_return_of_the_legendary_all_master" />
+
+                <TextView
+                    android:id="@+id/TextCover9"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="The Return Of The Legendary All-Master"
+                    android:textColor="@color/black"
+                    android:ellipsize="end"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover10"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/genius_game_broadcaster"/>
+
+                <TextView
+                    android:id="@+id/TextCover10"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Genius Game Broadcaster"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover11"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/the_archmage_restaurant"/>
+
+                <TextView
+                    android:id="@+id/TextCover11"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="The Archmage's Restaurant"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manga"
+            android:textColor="@color/white"
+            android:layout_marginTop="-33dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover12"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/spy_kyoushitsu"/>
+
+                <TextView
+                    android:id="@+id/TextCover12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Spy Kyoutshitsu"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover13"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/unnamed_memory"/>
+
+                <TextView
+                    android:id="@+id/TextCover13"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Unnamed Memory"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover14"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mushoku_tensei"/>
+
+                <TextView
+                    android:id="@+id/TextCover14"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Mushoku Tensei"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover15"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/the_last_adventurer"/>
+
+                <TextView
+                    android:id="@+id/TextCover15"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="The Last Adventurer"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover16"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/isekai_nonbiri_nouka"/>
+
+                <TextView
+                    android:id="@+id/TextCover16"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Isekai Nonbiri Nouka"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover17"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/konjiki_no_moji_tsukai"/>
+
+                <TextView
+                    android:id="@+id/TextCover17"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Konjiki no Moji Tsukai"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manhua"
+            android:textColor="@color/white"
+            android:layout_marginTop="-33dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover18"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/star_rank_hunter"/>
+
+                <TextView
+                    android:id="@+id/TextCover18"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Star Rank Hunter"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover19"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/outside_of_time"/>
+
+                <TextView
+                    android:id="@+id/TextCover19"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Outside of Time"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover20"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/my_divine_diary"/>
+
+                <TextView
+                    android:id="@+id/TextCover20"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="My Divine Diary"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover21"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mysterious_noble_beasts"/>
+
+                <TextView
+                    android:id="@+id/TextCover21"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Mysterious Noble Beasts"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover22"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mechanical_god_emperor"/>
+
+                <TextView
+                    android:id="@+id/TextCover22"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Mechanical God Emperor"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cover23"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/archean_eon_art"/>
+
+                <TextView
+                    android:id="@+id/TextCover23"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Archean Eon Art"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
