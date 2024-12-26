@@ -51,8 +51,9 @@
                 android:id="@+id/descriptionText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/renegede_immortal_text"
+                android:text="@string/cover20_text"
                 android:textColor="@color/black"
+                android:textIsSelectable="true"
                 android:textSize="16sp"
                 android:padding="16dp"
                 android:lineSpacingExtra="4dp" />
